@@ -1,0 +1,116 @@
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ cd ~
+(base) lwam@lwamPC:~$ cd ..
+(base) lwam@lwamPC:/home$ cd Desktop
+bash: cd: Desktop: No such file or directory
+(base) lwam@lwamPC:/home$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(base) lwam@lwamPC:/home$ cd ..
+(base) lwam@lwamPC:/$ cd ~
+(base) lwam@lwamPC:~$ cd ~
+(base) lwam@lwamPC:~$ cd Desktop
+(base) lwam@lwamPC:~/Desktop$ cd Kickstart/
+(base) lwam@lwamPC:~/Desktop/Kickstart$ cd my_testing_git_repo/
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git init
+Reinitialized existing Git repository in /home/lwam/Desktop/Kickstart/my_testing_git_repo/.git/
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ ls -a
+.  ..  .git
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git add -A
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git commit -m "added my name"
+[master (root-commit) 4bd3ccf] added my name
+ 2 files changed, 6 insertions(+)
+ create mode 100644 aboutpage.html
+ create mode 100644 example.html
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git branch "my-test-branch"
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git status
+On branch master
+nothing to commit, working tree clean
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git checkout
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git status
+On branch master
+nothing to commit, working tree clean
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git iadd -A
+git: 'iadd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git add -A
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git commit -m "added a list"
+On branch master
+nothing to commit, working tree clean
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git log
+commit 4bd3ccfe54486b1b363e2633bebb558a6ad9159c (HEAD -> master, my-test-branch)
+Author: lwam-ng <lwam.ghebregergish@gmail.com>
+Date:   Wed Mar 11 19:52:15 2020 -0700
+
+    added my name
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git checkout master
+Already on 'master'
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git status
+On branch master
+nothing to commit, working tree clean
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git log
+commit 4bd3ccfe54486b1b363e2633bebb558a6ad9159c (HEAD -> master, my-test-branch)
+Author: lwam-ng <lwam.ghebregergish@gmail.com>
+Date:   Wed Mar 11 19:52:15 2020 -0700
+
+    added my name
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git checkout master
+Already on 'master'
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git status
+On branch master
+nothing to commit, working tree clean
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git log
+commit 4bd3ccfe54486b1b363e2633bebb558a6ad9159c (HEAD -> master, my-test-branch)
+Author: lwam-ng <lwam.ghebregergish@gmail.com>
+Date:   Wed Mar 11 19:52:15 2020 -0700
+
+    added my name
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git checkout my-test-branch
+Switched to branch 'my-test-branch'
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git status
+On branch my-test-branch
+nothing to commit, working tree clean
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git log
+commit 4bd3ccfe54486b1b363e2633bebb558a6ad9159c (HEAD -> my-test-branch, master)
+Author: lwam-ng <lwam.ghebregergish@gmail.com>
+Date:   Wed Mar 11 19:52:15 2020 -0700
+
+    added my name
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git checkout master
+Switched to branch 'master'
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git log
+commit 4bd3ccfe54486b1b363e2633bebb558a6ad9159c (HEAD -> master, my-test-branch)
+Author: lwam-ng <lwam.ghebregergish@gmail.com>
+Date:   Wed Mar 11 19:52:15 2020 -0700
+
+    added my name
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git merge my-test-branch
+Already up to date.
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ git log
+commit 4bd3ccfe54486b1b363e2633bebb558a6ad9159c (HEAD -> master, my-test-branch)
+Author: lwam-ng <lwam.ghebregergish@gmail.com>
+Date:   Wed Mar 11 19:52:15 2020 -0700
+
+    added my name
+(base) lwam@lwamPC:~/Desktop/Kickstart/my_testing_git_repo$ 
